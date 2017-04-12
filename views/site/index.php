@@ -13,7 +13,7 @@ $this->title = 'Гемотест';
         <p class="lead">Стяжкина Марина.</p>
 
         <p>
-            <?= Html::a('Заказ услуг', ['order/create'], ['class' => 'btn btn-lg btn-success']) ?>            
+            <?= Html::a('Новый заказ', ['order/create'], ['class' => 'btn btn-lg btn-success']) ?>            
         </p>
     </div>
 

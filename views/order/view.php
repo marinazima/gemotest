@@ -31,10 +31,10 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id',
             'discount',
-            ['attribute'=>'created_at', 'format'=>['datetime', 'dd.MM.Y H:i:s']],
-            ['attribute'=>'updated_at', 'format'=>['datetime', 'dd.MM.Y H:i:s']],
+            ['attribute'=>'created_at', 'format'=>['datetime', 'php:d.m.y H:i:s']],
+            ['attribute'=>'updated_at', 'format'=>['datetime', 'php:d.m.y H:i:s']],
             'customer',
-            ['attribute'=>'birthdate', 'format'=>['datetime', 'dd.MM.Y']],
+            ['attribute'=>'birthdate', 'format'=>['datetime', 'php:d.m.y']],
             'phone',
             ['attribute'=>'gender','value'=>$model->getGender()],
             ['attribute'=>'services', 

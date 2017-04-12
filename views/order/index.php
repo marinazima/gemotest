@@ -28,20 +28,22 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['attribute'=>'id','options' => ['width'=>'70']],           
             ['attribute'=>'created_at', 
-            'format' =>  ['datetime', 'dd.MM.Y H:i:s'],
+            'format' =>  ['datetime', 'php:d.m.y H:i:s'],
             'options' => ['width' => '100']
             ],
             'customer',
             ['attribute'=>'birthdate', 
-            'format' =>  ['datetime', 'dd.MM.Y'],
-            'options' => ['width' => '100']
+            'format' =>  ['datetime', 'php:d.m.y'],
+            'options' => ['width' => '70'],
+            'header'=>'Дата<br>рождения'
             ],
             [
                 'attribute'=>'gender', 
                 'filter'=>Order::getGenders(),   
                 'value'=>function($data){
                     return $data->getGender();
-                }
+                },
+                'options' => ['width' => '70'],                
             ],
             ['attribute'=>'phone', 
             'options' => ['width' => '120']
@@ -53,7 +55,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format'=>'html'
             ],            
-
+            ['attribute'=>'discount','options' => ['width'=>'70']],           
+                        
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>    

@@ -30,8 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id',
-            ['attribute'=>'created_at', 'format'=>['datetime', 'dd.MM.Y H:i:s']],
-            ['attribute'=>'updated_at', 'format'=>['datetime', 'dd.MM.Y H:i:s']],
+            ['attribute'=>'created_at', 'format'=>['datetime', 'php:d.m.y H:i:s']],
+            ['attribute'=>'updated_at', 'format'=>['datetime', 'php:d.m.y H:i:s']],
             'discount',
             'birthdate_before:boolean',
             'birthdate_after:boolean',

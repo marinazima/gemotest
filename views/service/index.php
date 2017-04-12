@@ -26,11 +26,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['attribute'=>'id','options' => ['width'=>'100']],
             'name',            
             ['attribute'=>'created_at', 
-            'format' =>  ['datetime', 'dd.MM.Y H:i:s'],
+            'format' =>  ['datetime', 'php:d.m.y H:i:s'],
             'options' => ['width' => '200']
             ],
             ['attribute'=>'updated_at', 
-            'format' =>  ['datetime', 'dd.MM.Y H:i:s'],
+            'format' =>  ['datetime', 'php:d.m.y H:i:s'],
             'options' => ['width' => '200']
             ],
 

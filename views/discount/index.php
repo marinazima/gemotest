@@ -60,11 +60,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=>'html'
             ],                    
             ['attribute'=>'date_start', 
-            'format' =>  ['datetime', 'dd.MM.Y'],
+            'format' =>  ['datetime', 'php:d.m.y'],
             'options' => ['width' => '100']
             ],
             ['attribute'=>'date_end', 
-            'format' =>  ['datetime', 'dd.MM.Y'],
+            'format' =>  ['datetime', 'php:d.m.y'],
             'options' => ['width' => '100']
             ],
 
